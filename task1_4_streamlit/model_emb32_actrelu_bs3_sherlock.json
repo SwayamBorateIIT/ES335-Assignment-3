@@ -1,0 +1,11 @@
+{
+    "block_size": 3,
+    "emb_dim": 32,
+    "hidden_sizes": [
+        1024,
+        1024
+    ],
+    "activation": "relu",
+    "epochs": 200,
+    "dataset": "sherlock"
+}
