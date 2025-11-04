@@ -71,7 +71,7 @@ prompt = st.text_input("Enter a prompt", "Sherlock Holmes looked at Watson and s
 # Model Loading Function
 def load_model(dataset, emb_dim, activation, block_size):
     base_name = f"model_emb{emb_dim}_act{activation}_bs{block_size}_{dataset}"
-    pt, pkl, js = f"{base_name}.pt", f"{base_name}_vocab.pkl", f"{base_name}.json"
+    pt, pkl, js = f"./task1_4_streamlit/{base_name}.pt", f"./task1_4_streamlit/{base_name}_vocab.pkl", f"./task1_4_streamlit/{base_name}.json"
     if not all(os.path.exists(f) for f in [pt, pkl, js]):
         st.error(f"Missing files for {base_name}")
         return None, None, None
